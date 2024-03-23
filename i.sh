@@ -1,5 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/sh
-pkg update -y
 pkg i termux-services -y
 pkg i tur-repo -y
 pkg update -y
