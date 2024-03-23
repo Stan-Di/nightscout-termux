@@ -11,7 +11,7 @@ pkg update -y && curl -Lso- https://github.com/Stan-Di/nightscout-termux/raw/mai
 ```
 Script will download NodeJS 18 from old termux repository and precompiled Nightscout 15.0.2 with Termux services 
 
-Restart Termux bu typing
+Restart Termux by typing
 ```
 exit
 ```
