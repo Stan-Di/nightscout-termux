@@ -10,3 +10,13 @@ Run in Termux command
 pkg update -y && curl -Lso- https://github.com/Stan-Di/nightscout-termux/raw/main/i.sh | sh
 ```
 Script will download NodeJS 18 from old termux repository and precompiled Nightscout 15.0.2 with Termux services 
+
+Restart Termux bu typing
+```
+exit
+```
+And run it again
+
+Nightscout and MongoDB Database will  be started automatically
+
+Type http://localhost:1337 and use it
