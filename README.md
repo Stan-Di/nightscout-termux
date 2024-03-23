@@ -9,3 +9,4 @@ Run in Termux command
 ```
 curl -Lso- https://github.com/Stan-Di/nightscout-termux/raw/main/i.sh | sh
 ```
+Script will download NodeJS 18 from old termux repository and precompiled Nightscout 15.0.2 with Termux services 
