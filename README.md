@@ -20,3 +20,12 @@ And run it again
 Nightscout and MongoDB Database will  be started automatically
 
 Type http://localhost:1337 and use it
+
+You can edit Nightscout variables with
+```
+nano cgm/start.sh
+```
+And restart NightScoutService
+```
+sv down ns
+```
