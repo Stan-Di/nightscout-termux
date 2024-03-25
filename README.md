@@ -21,11 +21,11 @@ Nightscout and MongoDB Database will  be started automatically
 
 Type http://localhost:1337 and use it
 
-You can edit Nightscout variables with
+You can edit Nightscout variables (https://github.com/nightscout/cgm-remote-monitor?tab=readme-ov-file#environment) with
 ```
 nano cgm/start.sh
 ```
-And restart NightScout Service
+By edit file start.sh and add "export " before variable and restart NightScout Service
 ```
 killall node
 ```
