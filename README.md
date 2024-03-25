@@ -25,7 +25,7 @@ You can edit Nightscout variables with
 ```
 nano cgm/start.sh
 ```
-And restart NightScoutService
+And restart NightScout Service
 ```
-sv down ns
+killall node
 ```
