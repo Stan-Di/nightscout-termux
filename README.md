@@ -29,3 +29,26 @@ By edit file start.sh and add "export " before variable and restart NightScout S
 ```
 killall node
 ```
+
+### Full code for building cgm-remote-monitor on Termux (For advanced users)
+
+```
+pkg i termux-services -y
+pkg i tur-repo -y
+pkg i git -y
+pkg update -y
+pkg i mongodb -y
+curl -LO https://github.com/Stan-Di/nightscout-termux/releases/download/0.0.1/nodejs-lts_18.16.1-2_aarch64.deb
+curl -LO https://github.com/Stan-Di/nightscout-termux/releases/download/0.0.1/service.tar.gz
+dpkg -i nodejs-lts_18.16.1-2_aarch64.deb
+apt --fix-broken install -y
+
+git clone https://github.com/Nightscout/cgm-remote-monitor/
+cd cgm-remote-monitor
+rm package-lock.json
+npm install
+
+rm nodejs-lts_18.16.1-2_aarch64.deb service.tar.gz
+tar xzf service.tar.gz -C $PREFIX/var/
+exit
+```
