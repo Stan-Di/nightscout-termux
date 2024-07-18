@@ -11,6 +11,6 @@ tar xzf libicu.tar.gz -C $PREFIX/lib/
 dpkg -i nodejs-lts_18.16.1-2_aarch64.deb
 apt --fix-broken install -y
 tar xzf cgm-termux.tar.gz --checkpoint-action="ttyout=."
-rm cgm-termux.tar.gz nodejs-lts_18.16.1-2_aarch64.deb service.tar.gz
 tar xzf service.tar.gz -C $PREFIX/var/
+rm cgm-termux.tar.gz nodejs-lts_18.16.1-2_aarch64.deb service.tar.gz
 exit
