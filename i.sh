@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/sh
-pkg i termux-services -y
+pkg i termux-services libcrypt -y
 pkg i tur-repo -y
 pkg update -y
 pkg i mongodb -y
